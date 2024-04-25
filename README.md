@@ -21,4 +21,6 @@
 
 ## ⚠️ Problemas que enfrentei ⚠️
 
-## ⏭️ Próximos passos
+## Próximos passos  ⏭️ 
+ * Criar uma API;
+ * Ligar ao banco de dados MongoDb;
