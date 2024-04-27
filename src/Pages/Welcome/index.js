@@ -1,22 +1,27 @@
 import React from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import * as Animatable from 'react-native-animatable'
+import {useNavigation} from '@react-navigation/native'
 
 export default function Welcome(){
+    const navigation = useNavigation()
     return(
         <View style={styles.container}>
             <View style={styles.containerLogo}>
-                <Image source={require('../../assets/logo.png')} style={styles.ImgLogo} resizeMode="contain"/>
+                <Animatable.Image source={require('../../assets/logo.png')} style={styles.ImgLogo} 
+                animation="flipInY"
+                resizeMode="contain"/>
             </View>
 
-            <View style={styles.containerForm}>
-                <Text style={styles.title}>Monitore suas notas em qualquer lugar</Text>
-                <Text style={styles.text}>Faça o login para começar</Text>
+            <Animatable.View delay={600} animation="fadeInUp" style={styles.containerForm} >
+                <Text style={styles.title}>Tela de Login</Text>
+                <Text style={styles.text}>Lorem ipsum at eget dictumst mattis dolor aenean senectus, curabitur tempus purus eleifend posuere malesuada fermentum, aliquet fringilla ullamcorper cras tristique congue aliquam. </Text>
             
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('SignIn')}>
                 <Text style={styles.buttonText}>Acessar</Text>
             </TouchableOpacity>
 
-            </View>
+            </Animatable.View>
             
         </View>
     )
@@ -25,14 +30,14 @@ export default function Welcome(){
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: '#38A69D'
+        backgroundColor: '#0087F5'
     },
     ImgLogo:{
         width:"70%"
     },
     containerLogo:{
         flex:2,
-        backgroundColor: '#38A69D',
+        backgroundColor: '#0087F5',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -55,7 +60,7 @@ const styles = StyleSheet.create({
     },
     button:{
         position: 'absolute',
-        backgroundColor: '#49918B',
+        backgroundColor: '#0087F5',
         borderRadius: 50,
         paddingVertical: 8,
         width: '60%',
