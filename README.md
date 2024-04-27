@@ -3,7 +3,7 @@
 ## O que é o projeto
  É uma simples tela de login.
 ## Tecnologias utilizadas ✔️
-  * React
+  * React Native
 
 ## Dependências necessárias ✅
   * @expo/metro-runtime - Versão: "~3.1.3"
@@ -18,9 +18,9 @@
 ## Como rodar a aplicação ✅ 
   npm start
 ## Creditos ✔️
-
-## ⚠️ Problemas que enfrentei ⚠️
-
+ [Sujeito programador](https://www.youtube.com/watch?v=GZ_QSVDTQRw&t=1046s)
+## ⚠️ Problemas que enfrentei ⚠️ 
+ * Senti dificuldade em criar rotas por ser meu primeiro contato com o @react-navigation/native.
 ## Próximos passos  ⏭️ 
  * Criar uma API;
  * Ligar ao banco de dados MongoDb;
