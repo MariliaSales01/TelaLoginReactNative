@@ -4,6 +4,7 @@
  É uma simples tela de login.
 ## Tecnologias utilizadas ✔️
   * React Native
+  * TypeScript
 
 ## Dependências necessárias ✅
   * @expo/metro-runtime - Versão: "~3.1.3"
@@ -14,6 +15,9 @@
   * react-native-safe-area-context - Versão:"^4.9.0"
   * react-native-screens - Versão:"^3.30.1"
   * react-native-web - Versão: "~0.19.6"
+  * typescript- Versão: "^5.3.0"
+  * native-base- Versão: "^3.4.28"
+  * react-hook-form- Versão: "^7.51.3"
 
 ## Como rodar a aplicação ✅ 
   npm start
